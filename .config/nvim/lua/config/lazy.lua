@@ -163,6 +163,12 @@ require('lazy').setup({
       'stevearc/conform.nvim',
     },
 
+    -- arduino
+    {
+        'stevearc/vim-arduino',
+        'ecarlson94/vim-arduino-cli',
+    },
+
    'alanfortlink/blackjack.nvim',
 
     --clang
