@@ -1,8 +1,6 @@
-vim.g.mapleader = ","
-
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
+if not vim.uv.fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
   local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
   if vim.v.shell_error ~= 0 then
@@ -48,11 +46,7 @@ require('lazy').setup({
 
     --colorscheme
     'daenuprobst/lcarsoft',
-    {
-        'mustardfrog/pinkish_day',
-        lazy = true,
-        dependencies = { 'rktjmp/lush.nvim' },
-    },
+    'Mofiqul/dracula.nvim',
     "xero/evangelion.nvim",
 
     -- utility
@@ -70,25 +64,13 @@ require('lazy').setup({
     -- essentials
     "tpope/vim-surround",
     "vim-scripts/ReplaceWithRegister",
-
-    -- leetcode
     {
-        "kawre/leetcode.nvim",
-        build = ":TSUpdate html",
-        dependencies = {
-            "nvim-telescope/telescope.nvim",
-            "nvim-lua/plenary.nvim", -- required by telescope
-            "MunifTanjim/nui.nvim",
-
-            -- optional
-            "nvim-treesitter/nvim-treesitter",
-            "rcarriga/nvim-notify",
-            "nvim-tree/nvim-web-devicons",
-        },
-        opts = {
-            -- configuration goes here
-        },
+      -- norcalli's fork is unmaintained and calls the deprecated vim.tbl_flatten
+      'catgoose/nvim-colorizer.lua',
+      event = "BufReadPre",
+      opts = {},
     },
+
 
     -- file explorer
     {"nvim-telescope/telescope-fzf-native.nvim", build = "make"},
@@ -164,10 +146,8 @@ require('lazy').setup({
     },
 
     -- arduino
-    {
-        'stevearc/vim-arduino',
-        'ecarlson94/vim-arduino-cli',
-    },
+    'stevearc/vim-arduino',
+    'ecarlson94/vim-arduino-cli',
 
    'alanfortlink/blackjack.nvim',
 

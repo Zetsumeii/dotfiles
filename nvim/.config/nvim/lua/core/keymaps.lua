@@ -1,5 +1,5 @@
 local keymap = vim.keymap
-local bufopts = { noremap = true, silent = true, buffer = bufnr }
+local opts = { noremap = true, silent = true }
 
 -- basic keymaps
 
@@ -30,7 +30,7 @@ keymap.set("n", "<leader>fn", "<cmd>Telescope help_tags<cr>")
 keymap.set("n", "<leader>c", "<cmd>ClangFormat<cr>")
 
 -- lsp
-keymap.set("n", "<space>e", vim.diagnostic.open_float, bufopts)
+keymap.set("n", "<space>e", vim.diagnostic.open_float, opts)
 
 -- transparency
 keymap.set("n", "<leader>cc", "<cmd>TransparentToggle<cr>")

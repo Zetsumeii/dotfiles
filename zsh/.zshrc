@@ -150,7 +150,6 @@ alias t="tmux"
 
 # Hyprland specific
 alias sw="swaylock"
-
 alias rr="ranger"
 alias sb="scrobbler"
 
@@ -166,3 +165,5 @@ alias kg=kubectl get
 complete -C '/usr/local/bin/aws_completer' aws
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/share/nvm/init-nvm.sh" ] && \. "/usr/share/nvm/init-nvm.sh"
+
+alias trouve="grep -rn --exclude-dir=deps --exclude-dir=build"

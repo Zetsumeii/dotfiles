@@ -29,22 +29,38 @@ sudo dnf install stow tmux
 ## 🚀 Installation
 
 ```bash
-git clone https://github.com/Zetsumeii/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
+git clone https://github.com/Zetsumeii/dotfiles.git ~/dotfiles
+cd ~/dotfiles
 ```
 
-## 💡 Tip
+Each tool lives in its own [stow package](https://www.gnu.org/software/stow/), so you
+only ever symlink what you actually want:
 
-If you want all of my dotfiles just run:
-
-```bash
-stow .
+```
+dotfiles/
+├── kitty/.config/kitty/
+├── nvim/.config/nvim/
+├── ranger/.config/ranger/
+├── tmux/.tmux.conf
+└── zsh/.zshrc
 ```
 
-You can also selectively stow specific configs:
+Stow the packages you want:
 
 ```bash
-stow .tmux.conf
+stow nvim kitty ranger
+```
+
+Or grab everything:
+
+```bash
+stow nvim kitty ranger tmux zsh
+```
+
+To remove a package's symlinks again:
+
+```bash
+stow -D nvim
 ```
 
 ## 🧠 Notes

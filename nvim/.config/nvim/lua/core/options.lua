@@ -34,3 +34,5 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.iskeyword:append("-")
+
+vim.g.strip_whitespace_confirm = 0

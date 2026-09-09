@@ -62,6 +62,24 @@ vim.lsp.config('yamlls', {
   }
 })
 
+vim.lsp.config('tailwindcss', {
+  settings = {
+    tailwindCSS = {
+      experimental = {
+        classRegex = {
+          "class:\\s*[\"'`]([^\"'`]*)[\"'`]",
+        },
+      },
+    },
+  },
+})
+
+vim.lsp.config('html', {})
+vim.lsp.config('cssls', {})
+vim.lsp.config('sqlls', {
+    cmd = {"/usr/bin/sql-language-server", "up", "--method", "stdio"};
+})
+
 vim.lsp.enable({
   'rust_analyzer',
   'clangd',
@@ -71,8 +89,12 @@ vim.lsp.enable({
   'dockerls',
   'ts_ls',
   'svelte',
+  'tailwindcss',
+  'html',
+  'cssls',
   'docker_compose_language_service',
   'pyright',
   'arduino_language_server',
-  'yamlls'
+  'yamlls',
+  'sqlls'
 })
