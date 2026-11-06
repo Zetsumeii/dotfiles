@@ -1,0 +1,50 @@
+# Base
+base
+base-devel
+sudo
+man-db
+man-pages
+zsh
+git
+git-lfs
+stow
+vim
+neovim
+yay
+
+# Kernels and boot
+linux
+linux-headers
+linux-lts
+linux-lts-headers
+linux-firmware
+intel-ucode
+grub
+efibootmgr
+btrfs-progs
+
+# Graphics
+nvidia-open
+nvidia-open-lts
+nvidia-settings
+nvidia-prime
+intel-media-driver
+vulkan-intel
+mesa-utils
+
+# Audio and bluetooth
+pipewire
+pipewire-pulse
+pipewire-alsa
+wireplumber
+pavucontrol
+bluez
+bluez-utils
+
+# Network
+networkmanager
+openssh
+firewalld
+
+# Power
+tlp

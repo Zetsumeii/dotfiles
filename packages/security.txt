@@ -1,0 +1,8 @@
+# Security testing.
+
+nmap
+ffuf
+burpsuite
+ida-free
+pwncat
+swaks

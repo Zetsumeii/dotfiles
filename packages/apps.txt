@@ -1,0 +1,33 @@
+# Desktop applications.
+
+# Browsers
+firefox
+google-chrome
+torbrowser-launcher
+surf
+browsh
+
+# Chat
+abaddon
+telegram-desktop
+hexchat
+
+# Media
+vlc
+vlc-plugin-ffmpeg
+spotify
+yt-dlp
+obs-studio
+kdenlive
+gimp
+pinta
+qjackctl
+
+# Office and reading
+libreoffice-fresh
+zathura
+
+# Other
+claude-desktop
+parsec-bin
+rpi-imager

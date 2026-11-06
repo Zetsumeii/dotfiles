@@ -1,0 +1,16 @@
+# Games. Needs the multilib repository, install.sh enables it for this group.
+
+# Steam
+steam
+lib32-nvidia-utils
+bottles
+
+# Minecraft
+prismlauncher
+minecraft-launcher
+mcaselector
+nbtexplorer
+
+# Chess
+scid
+chessx

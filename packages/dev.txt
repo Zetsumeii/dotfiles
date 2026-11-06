@@ -1,0 +1,47 @@
+# Development tools.
+
+# C/C++
+clang
+gdb
+valgrind
+strace
+perf
+bear
+meson
+ninja
+nasm
+criterion
+autoconf-archive
+conan
+
+# Languages and editors
+zed
+npm
+jdk21-openjdk
+java21-openjfx-bin
+alire
+lua-language-server
+yaml-language-server
+
+# Git
+github-cli
+gitui
+
+# Applications
+android-studio
+postman-bin
+atac
+mongodb-compass
+simulide
+
+# Libraries
+sfml
+csfml
+glfw
+libconfig
+libxres
+opencl-headers
+opencv
+gtkmm
+imgui
+imgui-sfml

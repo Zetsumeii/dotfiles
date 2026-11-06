@@ -1,0 +1,28 @@
+# Containers, provisioning and remote access.
+
+# Containers
+docker
+docker-buildx
+docker-compose
+kubeadm
+kubectl
+
+# Provisioning
+ansible
+terraform
+packer
+vagrant
+qemu-base
+sshpass
+
+# Network
+tailscale
+wireguard-tools
+openvpn
+easy-rsa
+ngrok
+
+# File sharing
+nfs-utils
+rpcbind
+samba

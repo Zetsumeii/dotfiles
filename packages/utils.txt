@@ -1,0 +1,37 @@
+# Command line tools.
+
+# Files
+ranger
+fzf
+ripgrep
+tree
+dust
+unzip
+zip
+cpio
+dos2unix
+ntfs-3g
+jq
+imagemagick
+tmux
+
+# System
+htop
+inxi
+fastfetch
+reflector
+flatpak
+
+# Network
+inetutils
+traceroute
+ethtool
+bind
+openbsd-netcat
+
+# Other
+bc
+libirecovery
+libtatsu-git
+pokemon-colorscripts-git
+xcowsay

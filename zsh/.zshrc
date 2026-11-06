@@ -19,12 +19,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:/home/zetsumei/.cargo/bin"
 export PATH="$PATH:/home/zetsumei/.local/bin"
 
-# Cuda stack
-export PATH="/opt/cuda-11.7/bin:$PATH"
-export CUDA_HOME="/opt/cuda-11.7"
 
-# Nim stack
-export PATH="$HOME/.nimble/bin:$PATH"
 
 # Config
 export EDITOR="/usr/bin/nvim"
@@ -142,16 +137,12 @@ alias ls='lsd'
 alias l="ls -la"
 alias tree="lsd --tree"
 alias exot="exit"
-alias top="btm"
+alias top="htop"
 alias ckear="clear"
 alias cmear="clear"
-alias prime-run="__NV_PRIME_RENDER_OFFLOAD __GLX_VENDOR_LIBRARY_NAME=nvidia"
 alias t="tmux"
 
-# Hyprland specific
-alias sw="swaylock"
 alias rr="ranger"
-alias sb="scrobbler"
 
 ## kube
 

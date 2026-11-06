@@ -1,0 +1,37 @@
+# X11 session around dwm. dwm, dwmblocks and dmenu are built from source in ~.
+
+# X11
+xorg-server
+xorg-xauth
+xorg-xinit
+libx11
+libxft
+libxinerama
+
+# Session
+picom
+feh
+numlockx
+xclip
+flameshot
+kitty
+dolphin
+network-manager-applet
+playerctl
+lxappearance
+gtk3
+python-pywal
+
+# Input method
+fcitx5
+fcitx5-configtool
+fcitx5-gtk
+fcitx5-hangul
+fcitx5-qt
+
+# Fonts
+noto-fonts-cjk
+ttf-fira-code
+ttf-firacode-nerd
+ttf-nerd-fonts-symbols-mono
+ttf-times-new-roman
